@@ -1,0 +1,22 @@
+# Code With Harit
+# Cyber Octopus
+
+import colorsys
+import turtle
+
+t = turtle.Turtle()
+s = turtle.Screen()
+s.bgcolor('Black')
+t.speed(0)
+n = 80
+h = 0
+
+for i in range(302):
+
+    c = colorsys.hsv_to_rgb(h, 1, 0.8)
+    h+= 1/n
+    t.color(c)
+    t.left(154)
+    for j in  range(3):
+        t.forward(i)
+        t.left(55)  
